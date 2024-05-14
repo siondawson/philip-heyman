@@ -1,3 +1,21 @@
+/* NAV */
+
+.navbar {
+    background-color: transparent !important;
+    position: absolute; /* Make sure the navbar stays on top of the background image */
+    width: 100%;
+    z-index: 999; /* Ensure the navbar is above other elements */
+}
+
+.container-fluid {
+    position: relative; /* Make sure the container has a position to contain its absolute children */
+}
+
+/* You may need to adjust the z-index of other elements if necessary */
+
+
+/* HOME */
+
 #hero {
     height: 100vh;
     background-image: url('../images/philip-heyman-orchesta.webp');
@@ -28,9 +46,31 @@
     margin: 0; /* Remove default margins */
 }
 
+.service-cards-container a {
+    color: #000;
+    text-decoration: none;
+}
+
 
 .card:hover {
     transform: scale(1.05); /* Increase size on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
+/* CARE HOMES */
+
+#care-home-banner {
+    height: 66vh;
+    background-image: url('../images/violin.jpg');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
