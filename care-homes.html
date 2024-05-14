@@ -74,6 +74,46 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>For bookings an enquires please get in touch via the form below. I aim to answer all messages promptly</p>
+                    <div id="form-container">
+                        <form method="POST" id="form">
+                    
+                            <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
+                            <input type="hidden" name="subject" value="Care Home form submission">
+                    
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <div class="h-captcha" data-captcha="true"></div>
+                            </div>
+                    
+                            <button type="submit" class="btn btn-primary">Submit Form</button>
+                    
+                        </form>
+                    
+                        <div id="result"></div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </div>
         </div>
     </main>
     <footer class="bg-dark text-white py-4">
@@ -95,5 +135,44 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+        const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    const formContainer = document.getElementById('form-container');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait...";
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                formContainer.innerHTML = `
+                    <h3>Thank You!</h3>
+                    <p>Message received. We will get back to you soon.</p>
+                `;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        });
+    });
+        </script>
 </body>
 </html>
