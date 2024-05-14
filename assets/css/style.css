@@ -1,0 +1,36 @@
+#hero {
+    height: 100vh;
+    background-image: url('../images/philip-heyman-orchesta.webp');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background-color: #f8f9fa5c; /* Light grey background */
+    text-align: center; /* Center align text */
+    height: 100%; /* Ensure jumbotron fills parent height */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+}
+
+.jumbotron h1,
+.jumbotron p {
+    margin: 0; /* Remove default margins */
+}
+
+
+.card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
