@@ -13,7 +13,7 @@
 }
 
 .background-blue {
-    background-color: #0578ad;
+    background-color: #3b5765;
     height: 20vh;
 }
 
@@ -102,8 +102,12 @@
     
 }
 
+.wedding-quote {
+    font-size: 200%;
+}
+
 #wedding-form-section {
-    height: 75vh;
+    height: 100vh;
     background-color: #e3e3e3;
 }
 
