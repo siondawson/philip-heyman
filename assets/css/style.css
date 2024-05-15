@@ -2,7 +2,8 @@
 
 .navbar {
     background-color: transparent !important;
-    position: absolute; /* Make sure the navbar stays on top of the background image */
+    /* position: absolute; */
+    height: 10vh;
     width: 100%;
     z-index: 999; /* Ensure the navbar is above other elements */
 }
@@ -11,7 +12,10 @@
     position: relative; /* Make sure the container has a position to contain its absolute children */
 }
 
-/* You may need to adjust the z-index of other elements if necessary */
+.background-blue {
+    background-color: #0578ad;
+    height: 20vh;
+}
 
 
 /* HOME */
@@ -73,4 +77,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* WEDDINGS */
+
+#wedding-banner {
+    height: 66vh;
+    background-image: url('../images/background-stripes.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wedding-banner h1 {
+    font-size: 400%;
+    
+}
+
+#wedding-form-section {
+    height: 75vh;
+    background-color: #e3e3e3;
+}
+
+.form-wrapper {
+    margin: 0 auto; /* This centers the form horizontally */
+    max-width: 400px; /* Adjust as needed */
 }
