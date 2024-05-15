@@ -1,7 +1,11 @@
 html {
     width: 100%;
+    overflow-x: hidden;
 }
 
+body {
+    width: 100%;
+}
 /* NAV */
 
 .navbar {
@@ -146,3 +150,9 @@ html {
 .teaching-list li:before {
     content: '✓ ';
   }
+
+
+.footer {
+    width: 100%;
+    overflow-x: hidden;
+}
