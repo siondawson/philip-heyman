@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ff2fe9fdbb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Philip Heyman</title>
+    <title>Solo Violin Care Home Concerts</title>
 </head>
 <body>
     <header>
@@ -18,11 +18,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Weddings</a>
-                  <a class="nav-link" href="#">Care Homes</a>
-                  <a class="nav-link" href="#">Teaching</a>
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="weddings.html">Weddings</a>
+                  <a class="nav-link active" aria-current="page" href="care-homes.html">Care Homes</a>
+                  <a class="nav-link" href="violin-lessons.html">Teaching</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </div>
               </div>
             </div>
@@ -61,57 +61,79 @@
                             <h4>Classical</h4>
                             <ul>
                                 <li>Carmen Habanera</li>
-                                <li>Classical Piece</li>
-                                <li>Another classical piece</li>
+                                <li>Canon in D - Johann Pachelbel</li>
+                                <li>Ave Maria - Franz Schubert</li>
                             </ul>
                         </div>
                         <div class="col-12 col-md-6">
                             <h4>Pop</h4>
                             <ul>
-                                <li>pop 1</li>
-                                <li>pop 2</li>
-                                <li>pop 3</li>
+                                <li>Can't Help Falling in Love - Elvis Presley</li>
+                                <li>Yesterday - The Beatles</li>
+                                <li>Unchained Melody - Righteous Brothers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6">
+                            <h4>Jazz</h4>
+                            <ul>
+                                <li>Autumn Leaves</li>
+                                <li>Take Five - Dave Brubeck</li>
+                                <li>Summertime - George Gershwin</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Folk</h4>
+                            <ul>
+                                <li>Greensleeves</li>
+                                <li>Scarborough Fair</li>
+                                <li>Shenandoah</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <p>For bookings an enquires please get in touch via the form below. I aim to answer all messages promptly</p>
-                    <div id="form-container">
-                        <form method="POST" id="form">
-                    
-                            <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
-                            <input type="hidden" name="subject" value="Care Home form submission">
-                    
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name:</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                    
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                    
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message:</label>
-                                <textarea id="message" name="message" class="form-control" required></textarea>
-                            </div>
-                    
-                            <div class="mb-3">
-                                <div class="h-captcha" data-captcha="true"></div>
-                            </div>
-                    
-                            <button type="submit" class="btn btn-primary">Submit Form</button>
-                    
-                        </form>
-                        <div id="result"></div>
-                    </div>
-                </div>  
+                
             </div>
         </div>
+            <section id="wedding-form-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center"> <!-- Centering the form horizontally -->
+                                <div class="col-12 col-md-6 m-5">
+                                    <div id="form-container">
+                                        <h2 class="mb-5">Book a Concert for your residents!</h2>
+                                        <p>For a friendly no-obligation quote send me a message via the form. I aim to respond to all messages within 24 hours</p>
+                                        <form method="POST" id="form" class="py-5">
+                                            <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
+                                            <input type="hidden" name="subject" value="Care Home Concert form submission">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Name:</label>
+                                                <input type="text" id="name" name="name" class="form-control" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email:</label>
+                                                <input type="email" id="email" name="email" class="form-control" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message" class="form-label">Message:</label>
+                                                <textarea id="message" name="message" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="h-captcha" data-captcha="true"></div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit Form</button>
+                                        </form>
+                                        <div id="result"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
     </main>
     <footer class="bg-dark text-white py-4">
         <div class="container">
