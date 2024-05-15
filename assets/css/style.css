@@ -1,3 +1,7 @@
+html {
+    width: 100%;
+}
+
 /* NAV */
 
 .navbar {
@@ -21,41 +25,34 @@
 /* HOME */
 
 #hero {
-    position: relative;
     height: 100vh;
-    overflow: hidden;
     background-image: url('../images/philip-heyman-orchesta.webp');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center; 
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
-
-#hero .jumbotron {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .jumbotron {
-    background-color: rgba(248, 249, 250, 0.61); /* Light grey background with transparency */
+    background-color: #f8f9fa5c; /* Light grey background */
     text-align: center; /* Center align text */
-    padding: 20px; /* Add padding for better visibility */
+    height: 100%; /* Ensure jumbotron fills parent height */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
 }
 
 .jumbotron h1,
 .jumbotron p {
     margin: 0; /* Remove default margins */
 }
-
-
 
 .service-cards-container a {
     color: #000;
@@ -75,7 +72,7 @@ body {
     background-image: url('../images/violin.jpg');
     background-repeat: no-repeat;
     background-position: center center; 
-    background-attachment: scroll;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
