@@ -21,34 +21,41 @@
 /* HOME */
 
 #hero {
+    position: relative;
     height: 100vh;
+    overflow: hidden;
     background-image: url('../images/philip-heyman-orchesta.webp');
     background-repeat: no-repeat;
-    background-position: center center; 
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-position: center;
     background-size: cover;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+#hero .jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 .jumbotron {
-    background-color: #f8f9fa5c; /* Light grey background */
+    background-color: rgba(248, 249, 250, 0.61); /* Light grey background with transparency */
     text-align: center; /* Center align text */
-    height: 100%; /* Ensure jumbotron fills parent height */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Add padding for better visibility */
 }
 
 .jumbotron h1,
 .jumbotron p {
     margin: 0; /* Remove default margins */
 }
+
+
 
 .service-cards-container a {
     color: #000;
@@ -68,7 +75,7 @@
     background-image: url('../images/violin.jpg');
     background-repeat: no-repeat;
     background-position: center center; 
-    background-attachment: fixed;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,7 +131,7 @@
     background-image: url('../images/violin-5532995_1280.jpg');
     background-repeat: no-repeat;
     background-position: center left; 
-    background-attachment: fixed;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
