@@ -82,6 +82,15 @@ body {
     z-index: 111;
 }
 
+.biog-img-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
 /* CARE HOMES */
 
 #care-home-banner {
