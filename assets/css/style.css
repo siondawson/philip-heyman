@@ -9,7 +9,7 @@ body {
 
 /* BG COLORS */
 
-.turquoise-blue {
+.squares-pattern {
     
         --s: 59px; /* control the size*/
         --c1: #046d8b;
@@ -24,12 +24,14 @@ body {
       
 }
 
-/* .turquoise-blue {
+
+
+.turquoise-blue {
     background-color: #00BFA5;
-} */
+}
 
 .sunny-yellow {
-    background-color: #FFD54F;
+    background-color: #ffe796;
 }
 
 .vivid-purple {
