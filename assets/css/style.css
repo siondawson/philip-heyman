@@ -271,9 +271,11 @@ h1, h2, h3, h4, h5, h6 {
 /* TEACHING */
 
 #teaching-quote {
-    height: 30vh;
-   
+    height: 40vh; /* Adjust height as needed */
+    padding-top: 2rem; /* Add top padding for extra space */
+    padding-bottom: 2rem; /* Add bottom padding to prevent footer collision */
 }
+
 
 .teaching-list {
     list-style: none;
