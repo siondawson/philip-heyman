@@ -46,23 +46,44 @@ body {
 
 /* NAV */
 
-.navbar {
-    background-color: transparent !important;
-    /* position: absolute; */
-    height: 10vh;
-    width: 100%;
-    z-index: 999; /* Ensure the navbar is above other elements */
-}
+
 
 .container-fluid {
     position: relative; /* Make sure the container has a position to contain its absolute children */
 }
 
-.background-blue {
-    background-color: #3b5765;
-    height: 20vh;
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white !important; /* Set the text color to white */
 }
 
+.navbar-dark .nav-link.active {
+    color: #f8f9fa; /* Optional: Set a different color for the active link */
+}
+
+.navbar-dark .nav-link:hover {
+    color: #f8f9fa; /* Optional: Change color on hover for better visibility */
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000 !important;
+    
+}
+
+.footer ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; /* Optionally add an underline on hover */
+}
 
 /* HOME */
 
@@ -83,7 +104,7 @@ body {
 }
 
 .jumbotron {
-    background-color: #f8f9fa5c; /* Light grey background */
+    background-color: #f8f9fac7; /* Light grey background */
     text-align: center; /* Center align text */
     height: 100%; /* Ensure jumbotron fills parent height */
     display: flex; /* Use flexbox */
@@ -103,7 +124,7 @@ body {
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    height: 300px; /* Fixed height for all cards */
+    height: 200px; /* Fixed height for all cards */
     width: 100%; /* Ensure cards take full width of their container */
     overflow: hidden; /* Hide overflow of the image */
 }
@@ -155,6 +176,14 @@ body {
 
 /* ABSOLUTE ZERO */
 
+.bg-dark .card {
+    height: auto; /* Allow the card height to adjust based on content */
+    overflow: visible; /* Let the content overflow be visible if necessary */
+}
+
+.bg-dark .card-body {
+    overflow: auto; /* Ensure text fits within and scrolls if necessary */
+}
 
 /* CARE HOMES */
 
@@ -239,7 +268,3 @@ body {
   }
 
 
-.footer {
-    width: 100%;
-    overflow-x: hidden;
-}
