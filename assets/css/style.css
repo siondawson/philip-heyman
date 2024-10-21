@@ -68,6 +68,16 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.navbar-nav .nav-link {
+    text-decoration: none; /* Remove default underline */
+    transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
 
 .container-fluid {
     position: relative; /* Make sure the container has a position to contain its absolute children */
@@ -167,6 +177,15 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
+.info {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.info:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.3); /* Overlay on image */
     z-index: 0;
@@ -227,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 /* WEDDINGS */
 
 #wedding-banner {
-    height: 66vh;
+    height: 33vh;
     background-image: url('../images/background-stripes.jpeg');
     background-repeat: no-repeat;
     background-position: center center; 
@@ -251,14 +270,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 200%;
 }
 
-#wedding-form-section {
-    height: 100vh;
-    background-color: #e3e3e3;
-}
-
 .form-wrapper {
     margin: 0 auto; /* This centers the form horizontally */
     max-width: 400px; /* Adjust as needed */
+}
+
+.wedding-img {
+    max-width: 100%;  /* Ensure it doesn't exceed the width of its container */
+    height: auto;      /* Maintain aspect ratio */
+    object-fit: cover; /* Optionally cover the entire area */
 }
 
 
