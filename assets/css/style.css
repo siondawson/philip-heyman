@@ -276,6 +276,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 2rem; /* Add bottom padding to prevent footer collision */
 }
 
+@media (max-width: 768px) {
+    #teaching-quote {
+        height: 50vh; /* Height for small screens */
+    }
+}
+
 
 .teaching-list {
     list-style: none;
