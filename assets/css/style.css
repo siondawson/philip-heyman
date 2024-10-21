@@ -102,13 +102,34 @@ body {
 }
 
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    height: 300px; /* Fixed height for all cards */
+    width: 100%; /* Ensure cards take full width of their container */
+    overflow: hidden; /* Hide overflow of the image */
+}
+
+.card img {
+    height: 100%; /* Image takes full height */
+    width: 100%; /* Image takes full width */
+    object-fit: cover; /* Ensures image is scaled correctly and fills card */
 }
 
 .card:hover {
-    transform: scale(1.05); /* Increase size on hover */
+    transform: scale(1.05); /* Scale up on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text */
+    color: white;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay on image */
+    z-index: 0;
+}
+
 
 .overlay {
     position: absolute;
@@ -130,6 +151,9 @@ body {
     display: block;
     object-fit: cover;
 }
+
+
+/* ABSOLUTE ZERO */
 
 
 /* CARE HOMES */
