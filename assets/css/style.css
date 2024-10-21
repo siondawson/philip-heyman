@@ -227,25 +227,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CARE HOMES */
 
-#care-home-banner {
-    height: 66vh;
-    background-image: url('../images/violin.jpg');
-    background-repeat: no-repeat;
-    background-position: center center; 
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* WEDDINGS */
 
-#wedding-banner {
+.service-banner {
     height: 33vh;
     background-image: url('../images/background-stripes.jpeg');
     background-repeat: no-repeat;
@@ -286,18 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #teaching-quote {
     height: 30vh;
-    background-image: url('../images/violin-5532995_1280.jpg');
-    background-repeat: no-repeat;
-    background-position: center left; 
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .teaching-list {

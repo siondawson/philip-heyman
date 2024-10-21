@@ -42,110 +42,129 @@
             </nav>
         </header>
     <main>
-        <div class="container-fluid" id="care-home-banner">
-            <h1>Care Home Concerts</h1>
-        </div>
-        <div class="container py-5">
+        <div class="container-fluid service-banner">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2>Care Home Concerts</h2>
-                    <p>Experience the joy of live music in the comfort of your own home with Philip's Care Home Concerts. Bringing the magic of classical, pop, and more genres to life, Philip delivers enchanting performances accompanied by professional backing tracks. Elevate your day with melodies that stir the soul and rhythms that ignite the spirit, tailored to create memorable moments for residents and staff alike. Discover the power of music to uplift and inspire with Philip's Care Home Concerts.</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Showreel</h3>
-                    <iframe src="https://www.youtube.com/embed/rD70PpYwfvY?si=ZM_ZuTnh4-DVmQMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-12 col-md-6">
-                    <h2>Care Home Concerts in Breif</h2>
-                    <ul>
-                        <li>Self Contained Solo Concert</li>
-                        <li>Professional backing tracks</li>
-                        <li>Concerts tailored to residents</li>
-                        <li>Portable, quick set up and dismantle</li>
-                        <li>Performed by experienced professional musician</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Example Repertoire</h3>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h4>Classical</h4>
-                            <ul>
-                                <li>Carmen Habanera</li>
-                                <li>Canon in D - Johann Pachelbel</li>
-                                <li>Ave Maria - Franz Schubert</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4>Pop</h4>
-                            <ul>
-                                <li>Can't Help Falling in Love - Elvis Presley</li>
-                                <li>Yesterday - The Beatles</li>
-                                <li>Unchained Melody - Righteous Brothers</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 col-md-6">
-                            <h4>Jazz</h4>
-                            <ul>
-                                <li>Autumn Leaves</li>
-                                <li>Take Five - Dave Brubeck</li>
-                                <li>Summertime - George Gershwin</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h4>Folk</h4>
-                            <ul>
-                                <li>Greensleeves</li>
-                                <li>Scarborough Fair</li>
-                                <li>Shenandoah</li>
-                            </ul>
-                        </div>
+                <div class="col-lg-6 col-md-12"> <!-- Left 50% for the heading -->
+                    <div class="bg-dark text-white p-5 mx-5 d-flex justify-content-center align-items-center"> <!-- Use full viewport height for vertical centering -->
+                        <h1 class="display-6 text-center p-5">Care Home Concerts</h1>
                     </div>
                 </div>
-                
+                <div class="col-lg-6 col-md-12 d-none d-sm-block"> <!-- Right 50% left blank, hidden on small screens -->
+                    <!-- This column is intentionally left blank -->
+                </div>
             </div>
         </div>
-            <section id="wedding-form-section">
-                <div class="container-fluid">
+        
+        <article class="sunny-yellow">
+            <div class="container py-5">
+                <div class="bg-dark p-5 text-white">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="d-flex justify-content-center"> <!-- Centering the form horizontally -->
-                                <div class="col-12 col-md-6 m-5">
-                                    <div id="form-container">
-                                        <h2 class="mb-5">Book a Concert for your residents!</h2>
-                                        <p>For a friendly no-obligation quote send me a message via the form. I aim to respond to all messages within 24 hours</p>
-                                        <form method="POST" id="form" class="py-5">
-                                            <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
-                                            <input type="hidden" name="subject" value="Care Home Concert form submission">
-                                            <div class="mb-3">
-                                                <label for="name" class="form-label">Name:</label>
-                                                <input type="text" id="name" name="name" class="form-control" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="email" class="form-label">Email:</label>
-                                                <input type="email" id="email" name="email" class="form-control" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message" class="form-label">Message:</label>
-                                                <textarea id="message" name="message" class="form-control" required></textarea>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="h-captcha" data-captcha="true"></div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Submit Form</button>
-                                        </form>
-                                        <div id="result"></div>
-                                    </div>
+                        <div class="col-12 col-md-6">
+                            <h2>Care Home Concerts</h2>
+                            <p>Experience the joy of live music in the comfort of your own home with Philip's Care Home Concerts. Bringing the magic of classical, pop, and more genres to life, Philip delivers enchanting performances accompanied by professional backing tracks. Elevate your day with melodies that stir the soul and rhythms that ignite the spirit, tailored to create memorable moments for residents and staff alike. Discover the power of music to uplift and inspire with Philip's Care Home Concerts.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Showreel</h3>
+                            <iframe src="https://www.youtube.com/embed/rD70PpYwfvY?si=ZM_ZuTnh4-DVmQMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 col-md-6">
+                            <h2>Care Home Concerts in Brief</h2>
+                            <ul>
+                                <li>Self Contained Solo Concert</li>
+                                <li>Professional backing tracks</li>
+                                <li>Concerts tailored to residents</li>
+                                <li>Portable, quick set up and dismantle</li>
+                                <li>Performed by experienced professional musician</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Example Repertoire</h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h4>Classical</h4>
+                                    <ul>
+                                        <li>Carmen Habanera</li>
+                                        <li>Canon in D - Johann Pachelbel</li>
+                                        <li>Ave Maria - Franz Schubert</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h4>Pop</h4>
+                                    <ul>
+                                        <li>Can't Help Falling in Love - Elvis Presley</li>
+                                        <li>Yesterday - The Beatles</li>
+                                        <li>Unchained Melody - Righteous Brothers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12 col-md-6">
+                                    <h4>Jazz</h4>
+                                    <ul>
+                                        <li>Autumn Leaves</li>
+                                        <li>Take Five - Dave Brubeck</li>
+                                        <li>Summertime - George Gershwin</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h4>Folk</h4>
+                                    <ul>
+                                        <li>Greensleeves</li>
+                                        <li>Scarborough Fair</li>
+                                        <li>Shenandoah</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </article>
+        
+        <section class="squares-pattern py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-dark p-5 text-white">
+                            <div class="d-flex justify-content-center"> <!-- Centering the form horizontally -->
+                                <div class="col-12 col-md-6 m-5">
+                                    <h2 class="mb-5">Book a Concert for your residents!</h2>
+                                    <p>For a friendly no-obligation quote send me a message via the form. I aim to respond to all messages within 24 hours</p>
+                                    <form method="POST" id="form" class="py-5">
+                                        <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
+                                        <input type="hidden" name="subject" value="Care Home Concert form submission">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Name:</label>
+                                            <input type="text" id="name" name="name" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email:</label>
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message:</label>
+                                            <textarea id="message" name="message" class="form-control" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="h-captcha" data-captcha="true"></div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                                    </form>
+                                    <div id="result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+       
+        
         
     </main>
     <footer class="footer bg-dark text-white py-4">
