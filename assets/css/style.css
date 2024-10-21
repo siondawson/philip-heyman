@@ -46,6 +46,21 @@ body {
     background-color: #283593;
 }
 
+/* BUTTONS */
+
+.btn-primary {
+    background-color: #fafafa;
+    color: #000;
+    border-radius: 0%;
+    border: 2px solid;
+}
+
+.btn-primary:hover {
+    background-color: #000; /* Dark background on hover */
+    color: #fafafa; /* Light text on hover */
+    border: 2px solid #fafafa; /* Optional: set border color on hover */
+}
+
 /* FONTS */
 
 .barrio-regular {
