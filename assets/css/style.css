@@ -313,6 +313,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;  /* Ensure it doesn't exceed the width of its container */
     height: auto;      /* Maintain aspect ratio */
     object-fit: cover; /* Optionally cover the entire area */
+    padding-top: 0;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .wedding-img {
+        padding-top: 50px; /* Adds 3rem padding on small screens only */
+        border-radius: 50%;
+    }
 }
 
 
