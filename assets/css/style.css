@@ -248,13 +248,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-banner {
     height: 33vh;
-    background-image: url('../images/background-stripes.jpeg');
+    background: repeating-linear-gradient(
+        -45deg,            /* Set the angle of the lines */
+        #1f567f,          /* First blue shade */
+        #3a8fd2 20px,     /* Thickness of first blue shade */
+        #5db0e6 20px,     /* Start of second blue shade */
+        #5db0e6 40px      /* Thickness of second blue shade */
+    );
+    
+      
+    /* background-image: url('../images/background-stripes.jpeg');
     background-repeat: no-repeat;
     background-position: center center; 
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
     overflow: hidden;
     display: flex;
