@@ -250,10 +250,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 33vh;
     background: repeating-linear-gradient(
         -45deg,            /* Set the angle of the lines */
-        #1f567f,          /* First blue shade */
+        #046d8b,          /* First blue shade */
         #3a8fd2 20px,     /* Thickness of first blue shade */
-        #5db0e6 20px,     /* Start of second blue shade */
-        #5db0e6 40px      /* Thickness of second blue shade */
+        #2fb8ac 20px,     /* Start of second blue shade */
+        #2fb8ac 40px      /* Thickness of second blue shade */
     );
     
       
