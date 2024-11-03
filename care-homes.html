@@ -126,38 +126,38 @@
                 </div>
             </div>
         </article>
-        
         <section class="squares-pattern py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="bg-dark p-5 text-white">
                             <div class="d-flex justify-content-center"> <!-- Centering the form horizontally -->
-                                <div class="col-12 col-md-6 m-5">
-                                    <h2 class="mb-5">Book a Concert for your residents!</h2>
-                                    <p>For a friendly no-obligation quote send me a message via the form. I aim to respond to all messages within 24 hours</p>
-                                    <form method="POST" id="form" class="py-5">
-                                        <input type="hidden" name="access_key" value="543cc9a8-c465-4299-b43f-658812a52d0e">
-                                        <input type="hidden" name="subject" value="Care Home Concert form submission">
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label">Name:</label>
-                                            <input type="text" id="name" name="name" class="form-control" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label">Email:</label>
-                                            <input type="email" id="email" name="email" class="form-control" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="message" class="form-label">Message:</label>
-                                            <textarea id="message" name="message" class="form-control" required></textarea>
-                                        </div>
-                                        <div class="mb-3">
-                                            <div class="h-captcha" data-captcha="true"></div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit Form</button>
-                                    </form>
-                                    <div id="result"></div>
-                                </div>
+                                <div id="form-container">
+                                    <div class="bg-dark text-white p-5">
+                                      <h2 class="mb-5">Book a concert for your residents!</h2>
+                                      <form method="POST" id="form" class="py-5">
+                                          <input type="hidden" name="access_key" value="0f07f86a-eb97-45a6-b159-96f09f064017">
+                                          <input type="hidden" name="subject" value="Care Home Enquiry form submission">
+                                          <div class="mb-3">
+                                              <label for="name" class="form-label">Name:</label>
+                                              <input type="text" id="name" name="name" class="form-control" required>
+                                          </div>
+                                          <div class="mb-3">
+                                              <label for="email" class="form-label">Email:</label>
+                                              <input type="email" id="email" name="email" class="form-control" required>
+                                          </div>
+                                          <div class="mb-3">
+                                              <label for="message" class="form-label">Message:</label>
+                                              <textarea id="message" name="message" class="form-control" required></textarea>
+                                          </div>
+                                          <div class="mb-3">
+                                              <div class="h-captcha" data-captcha="true"></div>
+                                          </div>
+                                          <button type="submit" class="btn btn-primary">Submit Form</button>
+                                      </form>
+                                      <div id="result"></div>
+                                  </div>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -185,8 +185,8 @@
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
         const form = document.getElementById('form');
-    const result = document.getElementById('result');
-    const formContainer = document.getElementById('form-container');
+        const result = document.getElementById('result');
+        const formContainer = document.getElementById('form-container');
     
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -208,7 +208,7 @@
             if (response.status == 200) {
                 formContainer.innerHTML = `
                     <h3>Thank You!</h3>
-                    <p>Message received. We will get back to you soon.</p>
+                    <p>Message received. I will get back to you soon.</p>
                 `;
             } else {
                 console.log(response);
